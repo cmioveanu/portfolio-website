@@ -1,5 +1,7 @@
 #skills {
+    border-top: 3px solid black;
     margin-top: 8rem;
+    padding-top: 8rem;
 }
 
 #skills h2 {

@@ -1,11 +1,11 @@
 import * as React from "react";
-import { introSection, introDescription, container, introPara, buttonsContainer } from './intro.module.css';
+import { introSection, introDescription, introPara, buttonsContainer } from './intro.module.css';
 
 
 const Intro = () => {
     return (
         <section id={introSection}>
-            <div id={container}>
+            <div>
                 <h1>Cristian<br></br>Mioveanu</h1>
                 <h2 id={introDescription}>Full-Stack Developer</h2>
 

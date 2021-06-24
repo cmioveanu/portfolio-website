@@ -1,9 +1,12 @@
 import * as React from 'react';
 import { skills } from './skills.module.css';
+//import { StaticImage } from "gatsby-plugin-image"
 
 const Skills = () => {
     return (
         <section id={skills}>
+
+            {/* <StaticImage src="../images/wave.jpg" /> */}
             <h2>Skills</h2>
             <p>With the projects I've worked on, I have aquired a wide variety of skills,
                 from newer modern libraries like React, Redux and Express,
@@ -83,7 +86,6 @@ const Skills = () => {
                 </svg>
                 <figcaption>Github</figcaption>
             </figure>
-
 
             <h3>Additional Skills</h3>
             <figure>

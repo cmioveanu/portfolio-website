@@ -8,6 +8,7 @@ import Stars from "../components/stars";
 import Intro from "../components/intro";
 import Profile from "../components/profile";
 import Skills from "../components/skills";
+import Projects from "../components/projects";
 
 
 const IndexPage = () => (
@@ -19,6 +20,7 @@ const IndexPage = () => (
     <Profile >
       <Skills />
     </Profile>
+    <Projects />
 
   </main>
 );
