@@ -1,6 +1,7 @@
 #projects {
     margin-top: 8rem;
     margin-bottom: 0 !important;
+    position: relative;
 }
 
 #projectsContainer {
