@@ -6,7 +6,9 @@ import "../css/main.css";
 import Seo from "../components/seo";
 import Stars from "../components/stars";
 import Intro from "../components/intro";
-import About from "../components/about";
+import Profile from "../components/profile";
+import Skills from "../components/skills";
+
 
 const IndexPage = () => (
   <main>
@@ -14,7 +16,10 @@ const IndexPage = () => (
     <Seo title="Home" />
 
     <Intro />
-    <About />
+    <Profile >
+      <Skills />
+    </Profile>
+
   </main>
 );
 

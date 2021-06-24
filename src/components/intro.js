@@ -1,5 +1,5 @@
 import * as React from "react";
-import { introSection, container, introPara, buttonsContainer } from './intro.module.css';
+import { introSection, introDescription, container, introPara, buttonsContainer } from './intro.module.css';
 
 
 const Intro = () => {
@@ -7,7 +7,7 @@ const Intro = () => {
         <section id={introSection}>
             <div id={container}>
                 <h1>Cristian<br></br>Mioveanu</h1>
-                <h2>Full-Stack Developer</h2>
+                <h2 id={introDescription}>Full-Stack Developer</h2>
 
                 <p id={introPara}><span>Hello!</span> <br></br>I’m a web developer based in Kent, with a
                     passion for tech, design, and

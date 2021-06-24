@@ -1,5 +1,4 @@
 @import "../css/typography.css";
-
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -77,7 +76,6 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Monotone';
   font-weight: normal;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
@@ -628,7 +626,8 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
   }
 }
 
-/* Custom styles */
+/* Custom added styles */
+
 html {
   /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
   /* height: 100%; */
@@ -636,26 +635,25 @@ html {
   overflow: scroll;
 }
 
-section {
-  padding: 2rem !important;
-}
-
-h1 {
+h1, h2 {
+  font-family: 'Monotone';
+  font-weight: 400;
   margin-bottom: 0;
   font-size: 3rem;
   color: #a8ebff;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-h2 {
+h3 {
   border-top: 1px solid #a8ebff;
   border-bottom: 1px solid #a8ebff;
   padding: 0.5rem 0;
-  margin: 0.3rem auto 1rem auto;
+  margin: 4rem 0 3rem 0;
   font-family: 'Lato';
   font-size: 1rem;
   letter-spacing: 7.1px;
   text-transform: uppercase;
-  max-width: 350px;
   font-weight: 400;
   text-align: center;
 }
@@ -672,6 +670,22 @@ button:hover {
   background-color: rgba(255, 255, 255, 0.2);
   border-color: white;
   color: #a8ebff;
-  box-shadow: 0 0 10px white;
   cursor: pointer;
+}
+
+figure {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 14px;
+}
+
+svg {
+  width: 60px;
+  fill: #a8ebff;
 }
