@@ -9,7 +9,7 @@ const Intro = () => {
                 <h1>Cristian<br></br>Mioveanu</h1>
                 <h2>Full-Stack Developer</h2>
 
-                <p id={introPara}>Hi. I’m a web developer with a
+                <p id={introPara}><span>Hello!</span> <br></br>I’m a web developer based in Kent, with a
                     passion for tech, design, and
                     meeting new people.</p>
 
