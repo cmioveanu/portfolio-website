@@ -1,9 +1,21 @@
 #skills {
-    border-top: 3px solid black;
     margin-top: 8rem;
-    padding-top: 8rem;
 }
 
 #skills h2 {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+}
+
+#skills p {
+    text-align: center;
+}
+
+#skills figure {
+    width: 90px;
+}
+
+.iconsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
