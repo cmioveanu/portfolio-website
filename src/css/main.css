@@ -669,7 +669,7 @@ button {
 }
 
 button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.3);
   border-color: white;
   color: #a8ebff;
   cursor: pointer;
@@ -730,11 +730,7 @@ li {
   padding: 1rem 2rem;
 }
 
-nav {
-  padding-top: 0.5rem;
-  display: flex;
-  justify-content: center;
-}
+
 
 form {
   max-width: 400px;
@@ -757,3 +753,5 @@ input {
   margin-bottom: 1.25rem;
   height: 35px;
 }
+
+
