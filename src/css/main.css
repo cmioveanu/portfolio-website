@@ -744,6 +744,7 @@ form {
 label, input, textarea {
   width: 100%;
   display: block;
+  border: none;
 }
 
 label {
@@ -754,4 +755,5 @@ label {
 
 input {
   margin-bottom: 1.25rem;
+  height: 35px;
 }

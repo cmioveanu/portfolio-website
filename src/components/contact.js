@@ -1,12 +1,14 @@
 import * as React from "react";
-import { contact } from "./contact.module.css";
+import { contact, contactForm } from "./contact.module.css";
+import Stars from "./stars";
 
 
 const Contact = () => {
     return (
         <section id="contact" className={contact}>
+            <Stars />
             <h2>Contact</h2>
-            <form>
+            <form id={contactForm}>
                 <label htmlFor="name">Name:</label>
                 <input id="name" type="text"></input>
 

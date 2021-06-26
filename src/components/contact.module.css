@@ -1,8 +1,17 @@
 .contact {
     padding-top: 8rem;
     padding-bottom: 8rem;
+    max-height: 751px;
+    overflow: hidden;
+    position: relative;
+    z-index: 4;
+    background-color: #00163b;
 }
 
 .contact h2 {
     margin-bottom: 4rem;
+}
+
+#contactForm {
+    position: relative;
 }
