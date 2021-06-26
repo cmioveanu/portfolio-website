@@ -17,9 +17,9 @@ const Intro = () => {
                 <div id={buttonsContainer}>
                     <button><Link to="#projects">Projects</Link></button>
                     <button>
-                        <Link to="https://github.com/cmioveanu" 
+                        <a href="https://github.com/cmioveanu" 
                         target="_blank"
-                        rel="noreferrer">Github</Link>
+                        rel="noreferrer">Github</a>
                     </button>
                 </div>
             </div>

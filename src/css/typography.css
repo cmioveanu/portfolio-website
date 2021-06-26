@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Monotone";
     src: url("../fonts/Monoton-Regular.ttf");
+    font-display: swap;
 }
 
 /*
@@ -21,6 +22,7 @@
     font-family: "Lato";
     src: url("../fonts/Lato-Regular.ttf");
     font-weight: 400;
+    font-display: swap;
 }
 
 /*
