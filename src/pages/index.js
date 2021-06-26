@@ -4,11 +4,13 @@ import * as React from "react";
 import "../css/main.css";
 
 import Seo from "../components/seo";
+import Menu from "../components/menu";
 import Stars from "../components/stars";
 import Intro from "../components/intro";
 import Profile from "../components/profile";
 import Skills from "../components/skills";
 import Projects from "../components/projects";
+import Contact from "../components/contact";
 
 
 const IndexPage = () => (
@@ -16,12 +18,13 @@ const IndexPage = () => (
     <Stars />
     <Seo title="Home" />
 
+    <Menu />
     <Intro />
     <Profile >
       <Skills />
     </Profile>
     <Projects />
-
+    <Contact />
   </main>
 );
 

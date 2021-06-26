@@ -633,6 +633,7 @@ html {
   /* height: 100%; */
   background-color: #00163b;
   overflow: scroll;
+  scroll-behavior: smooth;
 }
 
 h1, h2 {
@@ -662,8 +663,9 @@ button {
   background: none;
   border: 1px solid #a8ebff;
   color: white;
-  padding: 0.5rem;
+  padding: 0;
   width: 47%;
+  transition: all 0.3s ease;
 }
 
 button:hover {
@@ -671,6 +673,31 @@ button:hover {
   border-color: white;
   color: #a8ebff;
   cursor: pointer;
+}
+
+button a {
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  color: #a8ebff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+nav a {
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid transparent;
+}
+
+nav a:hover {
+  border-bottom: 1px solid #a8ebff;
 }
 
 figure {
@@ -690,4 +717,40 @@ figcaption {
 svg {
   width: 60px;
   fill: #a8ebff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  color: white;
+  display: inline;
+  padding: 1rem 2rem;
+}
+
+nav {
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label, input, textarea {
+  width: 100%;
+  display: block;
+}
+
+label {
+  color: #a8ebff;
+  font-size: 1rem;
+  margin-bottom: 3px;
+}
+
+input {
+  margin-bottom: 1.25rem;
 }

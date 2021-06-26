@@ -3,7 +3,7 @@ import { profile } from './profile.module.css';
 
 const Profile = ({children}) => {
   return (
-    <section id={profile}>
+    <section id="profile" className={profile}>
       <h2>Profile</h2>
       <p>I'm an optimistic, energetic and curious person who likes to keep learning, 
         continue challenging myself, and do interesting things that matter.</p>

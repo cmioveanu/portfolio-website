@@ -1,4 +1,4 @@
-#profile {
+.profile {
     box-shadow: 0 0 100px black;
     background-color: #00163b;
     padding: 4rem !important;
@@ -9,12 +9,12 @@
   }
   
 
-#profile h2 {
+.profile h2 {
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
 
-#profile p {
+.profile p {
   color: white;
   line-height: 1.9;
   text-align: center;

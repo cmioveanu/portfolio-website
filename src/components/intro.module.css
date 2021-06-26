@@ -1,4 +1,4 @@
-#introSection {
+#intro {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -42,3 +42,4 @@
     max-width: 350px;
     margin: 0 auto;
 }
+

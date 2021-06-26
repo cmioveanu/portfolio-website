@@ -1,16 +1,17 @@
-#skills {
-    margin-top: 8rem;
+.skills {
+    padding-top: 4rem;
+    margin-top: 4rem;
 }
 
-#skills h2 {
+.skills h2 {
     margin-bottom: 3rem;
 }
 
-#skills p {
+.skills p {
     text-align: center;
 }
 
-#skills figure {
+.skills figure {
     width: 90px;
 }
 

@@ -97,7 +97,7 @@ const Projects = () => {
 
 
     return (
-        <section id={projects}>
+        <section id="projects" className={projects}>
             <div class={canvasWrap}>
                 <canvas id="canvas" className={canvas}></canvas>
             </div>
