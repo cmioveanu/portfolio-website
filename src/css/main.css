@@ -620,12 +620,6 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
   content: "";
 }
 
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
-}
-
 /* Custom added styles */
 
 html {
@@ -634,13 +628,18 @@ html {
   background-color: #00163b;
   overflow: scroll;
   scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+section {
+  padding: 0 1rem;
 }
 
 h1, h2 {
   font-family: 'Monotone';
   font-weight: 400;
   margin-bottom: 0;
-  font-size: 3rem;
+  font-size: 2.3rem;
   color: #a8ebff;
   text-align: center;
   text-transform: uppercase;
@@ -720,38 +719,43 @@ svg {
   fill: #a8ebff;
 }
 
-ul {
-  list-style-type: none;
-}
-
-li {
-  color: white;
-  display: inline;
-  padding: 1rem 2rem;
-}
-
-
-
-form {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-label, input, textarea {
-  width: 100%;
+#canvas {
   display: block;
-  border: none;
+  width: 100%;
+  height: 100px;
+  margin-top: 8rem !important;
 }
 
-label {
-  color: #a8ebff;
-  font-size: 1rem;
-  margin-bottom: 3px;
+#canvasWrap {
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  transform: translateY(-50%);
 }
 
-input {
-  margin-bottom: 1.25rem;
-  height: 35px;
+p {
+  line-height: 1.6;
 }
 
+@media only screen and (min-width: 320px) {
+  h1, h2 {
+    font-size: 2.5rem;
+  }
+}
 
+@media only screen and (min-width: 350px) {
+  h1, h2 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 385px) {
+  h1, h2 {
+    font-size: 3.3rem;
+  }
+
+  section {
+    padding: 0 2rem;
+  }
+}

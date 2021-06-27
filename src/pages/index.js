@@ -23,6 +23,9 @@ const IndexPage = () => (
     <Profile >
       <Skills />
     </Profile>
+    <div className="canvasWrap">
+                <canvas id="canvas"></canvas>
+            </div>
     <Projects />
     <Contact />
   </main>

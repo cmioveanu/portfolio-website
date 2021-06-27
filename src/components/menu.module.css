@@ -6,6 +6,16 @@
     background-color: #00163b;
 }
 
+#header ul {
+    list-style-type: none;
+}
+
+#header li {
+    color: white;
+    display: inline;
+    padding: 1rem 2rem;
+}
+
 #mobileNav {
     background-color: #00163b;
     position: fixed;
@@ -75,7 +85,7 @@
     width: 60px;
     height: 60px;
     background-color: #a8ebff;
-    border-bottom-left-radius : 35%;
+    border-bottom-left-radius: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,7 +106,6 @@
     text-align: center;
     font-size: 1.5rem;
 }
-
 
 @media only screen and (min-width: 600px) {
     #desktopNav {

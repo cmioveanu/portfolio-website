@@ -1,32 +1,18 @@
 .projects {
-    margin-top: 8rem;
-    margin-bottom: 0 !important;
     position: relative;
     z-index: 5;
     box-shadow: 0 100px 100px -50px black;
+    background-color: #002964;
+    padding-bottom: 4rem;
 }
 
 #projectsContainer {
-    padding: 4rem;
-    background-color: #002964;
     margin-bottom: 0;
 }
 
-.canvas {
-    display: block;
-    width: 100%;
-    height: 100px;
-}
-
-#canvasWrap {
-    max-width: 100%;
-    overflow: hidden;
-    position: absolute;
-    transform: translateY(-50%);
-}
-
 .projects h2 {
-    margin-bottom: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 0;
 }
 
 .projects h3 {
@@ -37,6 +23,7 @@
 #innerProjectsContainer {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     max-width: 1000px;
     margin: 0 auto;
 }

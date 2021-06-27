@@ -1,10 +1,19 @@
+
 .skills {
-    padding-top: 4rem;
-    margin-top: 4rem;
+    padding: 0;
 }
 
 .skills h2 {
+    margin-top: 6rem;
     margin-bottom: 3rem;
+}
+.skills h3 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.skills h3:last-of-type {
+    margin-top: 2.5rem;
 }
 
 .skills p {
@@ -12,7 +21,11 @@
 }
 
 .skills figure {
-    width: 90px;
+    width: 80px;
+}
+
+.skills svg {
+    width: 40px;
 }
 
 .iconsContainer {

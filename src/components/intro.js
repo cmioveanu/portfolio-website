@@ -1,12 +1,12 @@
 import * as React from "react";
-import { intro, introDescription, introPara, buttonsContainer } from './intro.module.css';
+import { intro, introInnerContainer, introDescription, introPara, buttonsContainer } from './intro.module.css';
 import { Link } from "gatsby";
 
 
 const Intro = () => {
     return (
         <section id={intro}>
-            <div>
+            <div id={introInnerContainer}>
                 <h1>Cristian<br></br>Mioveanu</h1>
                 <h2 id={introDescription}>Full-Stack Developer</h2>
 

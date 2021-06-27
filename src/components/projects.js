@@ -103,14 +103,10 @@ const Projects = () => {
 
     return (
         <section id="projects" className={projects}>
-            <div className={canvasWrap}>
-                <canvas id="canvas" className={canvas}></canvas>
-            </div>
-
             <div id={projectsContainer}>
                 <h2>Projects</h2>
 
-                <section id={innerProjectsContainer}>
+                <div id={innerProjectsContainer}>
                     <IndividualProject
                         projectName="Gazetteer"
                         photoSrc={GazetteerImage}
@@ -169,7 +165,7 @@ const Projects = () => {
                         </svg>
                     </IndividualProject>
 
-                </section>
+                </div>
             </div>
 
         </section>
