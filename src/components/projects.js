@@ -10,7 +10,7 @@ import IndividualProject from "./IndividualProject";
 const Projects = () => {
 
 
-    const makeWaves = () => {
+    const makeWaves = async () => {
         let cvs, ctx;
         const nodes = 3;
         const waves = [];
@@ -97,7 +97,7 @@ const Projects = () => {
 
 
     React.useEffect(() => {
-        makeWaves();
+        //makeWaves();
     }, []);
 
 
