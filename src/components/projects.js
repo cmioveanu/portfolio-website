@@ -10,72 +10,72 @@ import IndividualProject from "./IndividualProject";
 const Projects = () => {
 
 
-    function makeWaves() {
-        var cvs, ctx;
-        var nodes = 8;
-        var waves = [];
-        var waveHeight = 100;
-        var colours = ["#00050d", "#00102b"];
+    const makeWaves = () => {
+        let cvs, ctx;
+        const nodes = 3;
+        const waves = [];
+        const waveHeight = 100;
+        const colours = ["#00050d", "#00102b"];
 
         // Initiator function
-        function init() {
+        const init = () => {
             cvs = document.getElementById("canvas");
             ctx = cvs.getContext("2d");
 
-            for (var i = 0; i < 2; i++) {
-                waves.push(new wave(colours[i], 1, nodes));
-            }
+            waves.push(new wave(colours[0], 1, nodes));
+            waves.push(new wave(colours[1], 1, nodes));
 
             update();
         }
 
-        function update() {
+        const update = () => {
             //var fill = window.getComputedStyle(document.querySelector(".header"), null).getPropertyValue("background-color");
             ctx.fillStyle = '#00163b';
             ctx.globalCompositeOperation = "source-over";
             ctx.fillRect(0, 0, cvs.width, cvs.height);
             ctx.globalCompositeOperation = "screen";
-            for (var i = 0; i < waves.length; i++) {
-                for (var j = 0; j < waves[i].nodes.length; j++) {
-                    bounce(waves[i].nodes[j]);
-                }
-                drawWave(waves[i]);
+            
+
+            // bounce nodes and draw waves
+            for (let i = 0; i < waves[0].nodes.length; i++) {
+                bounce(waves[0].nodes[i]);
+                bounce(waves[1].nodes[i]);
             }
-            ctx.fillStyle = '#00163b';
+            drawWave(waves[0]);
+            drawWave(waves[1]);
 
             requestAnimationFrame(update);
         }
 
+
+        // Wave object constructor
         function wave(colour, lambda, nodes) {
 
             this.colour = colour;
             this.lambda = lambda;
             this.nodes = [];
 
-            for (var i = 0; i <= nodes + 2; i++) {
-                var temp = [(i - 1) * cvs.width / nodes, 0, Math.random() * 200, .3];
+            for (let i = 0; i <= nodes + 2; i++) {
+                const temp = [(i - 1) * cvs.width / nodes, 0, Math.random() * 200, .3];
                 this.nodes.push(temp);
             }
         }
 
-        function bounce(nodeArr) {
+        const bounce = (nodeArr) => {
             nodeArr[1] = waveHeight / 2 * Math.sin(nodeArr[2] / 20) + cvs.height / 2;
             nodeArr[2] = nodeArr[2] + nodeArr[3];
-
         }
 
-        function drawWave(obj) {
+        const drawWave = (obj) => {
 
-            var diff = function (a, b) {
-                return (b - a) / 2 + a;
-            }
+            const diff = (a, b) => (b - a) / 2 + a;
 
             ctx.fillStyle = obj.colour;
             ctx.beginPath();
             ctx.moveTo(0, cvs.height);
             ctx.lineTo(obj.nodes[0][0], obj.nodes[0][1]);
 
-            for (var i = 0; i < obj.nodes.length; i++) {
+            for (let i = 0; i < obj.nodes.length; i++) {
 
                 if (obj.nodes[i + 1]) {
                     ctx.quadraticCurveTo(
