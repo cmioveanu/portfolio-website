@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { canvas, canvasWrap, projectsContainer, innerProjectsContainer, projects } from "./projects.module.css";
+import { projectsContainer, innerProjectsContainer, projects } from "./projects.module.css";
 
 import GazetteerImage from "../images/Gazetteer.jpg";
 import DirectoryImage from "../images/Directory.jpg";

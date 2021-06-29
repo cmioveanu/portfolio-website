@@ -735,7 +735,7 @@ svg {
 }
 
 p {
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 @media only screen and (min-width: 320px) {
@@ -757,5 +757,12 @@ p {
 
   section {
     padding: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  p {
+    font-size: 1.2rem;
+    line-height: 1.9;
   }
 }
