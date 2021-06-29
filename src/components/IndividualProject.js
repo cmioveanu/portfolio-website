@@ -5,7 +5,7 @@ import { project, iconsContainer, buttonsContainer } from "./IndividualProject.m
 const IndividualProject = ({ projectName, photoSrc, photoAlt, description, live, github, githubShow, children }) => {
     return (
         <section className={project}>
-            <img src={photoSrc} alt={photoAlt} />
+            <img src={photoSrc} alt={photoAlt} width="470" height="322"/>
 
             <div id={iconsContainer}>{children}</div>
 

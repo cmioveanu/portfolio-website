@@ -14,10 +14,10 @@ import Contact from "../components/contact";
 
 
 const IndexPage = () => (
+  
   <main>
     <Stars />
     <Seo title="Home" />
-
     <Menu />
     <Intro />
     <Profile >

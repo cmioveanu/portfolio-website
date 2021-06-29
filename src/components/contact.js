@@ -41,7 +41,6 @@ const Contact = () => {
 
     return (
         <section id="contact" className={contact}>
-            <Stars />
             <h2>Contact</h2>
             <form id={contactForm}>
                 <label htmlFor="name">Name:</label>
