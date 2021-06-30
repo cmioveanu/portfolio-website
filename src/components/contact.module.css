@@ -1,13 +1,12 @@
 .contact {
-    padding-top: 8rem;
+    padding-top: 10rem;
     padding-bottom: 8rem;
-    max-height: 850px;
-    overflow: hidden;
-    background-color: #00163b;
+    background: none;
+    position: relative;
 }
 
 .contact h2 {
-    margin-bottom: 4rem;
+    margin-bottom: 0;
 }
 
 #contactForm {
@@ -49,4 +48,19 @@
 
 .contact textarea {
     background-color: #e3e6e8;
+}
+
+#sayHello {
+    line-height: 1.7;
+    font-size: 1.2rem;
+    margin: 3rem auto 5rem auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+#sayHello span {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #a8ebff;
 }

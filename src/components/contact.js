@@ -1,5 +1,5 @@
 import * as React from "react";
-import { contact, contactForm } from "./contact.module.css";
+import { contact, contactForm, sayHello } from "./contact.module.css";
 
 
 const Contact = () => {
@@ -41,6 +41,10 @@ const Contact = () => {
     return (
         <section id="contact" className={contact}>
             <h2>Contact</h2>
+
+            <p id={sayHello}><span>Say hello!</span> <br></br>Send me a message to talk about anything.
+                <br></br>I look forward to hearing from you!</p>
+
             <form id={contactForm}>
                 <label htmlFor="name">Name:</label>
                 <input id="name" type="text" onChange={(e) => setName(e.target.value)}></input>
