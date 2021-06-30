@@ -42,8 +42,8 @@ const Contact = () => {
         <section id="contact" className={contact}>
             <h2>Contact</h2>
 
-            <p id={sayHello}><span>Say hello!</span> <br></br>Send me a message to talk about anything.
-                <br></br>I look forward to hearing from you!</p>
+            <p id={sayHello}><span>Say hello!</span> <br></br>Send me a message to talk about anything. 
+            I look forward to hearing from you!</p>
 
             <form id={contactForm}>
                 <label htmlFor="name">Name:</label>
