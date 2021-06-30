@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import { header, mobileNav, desktopNav, openMenuButton, closeMenuButton } from './menu.module.css';
+import { header, mobileNav, desktopNav, openMenuButton, closeMenuButton, closeMenuBig } from './menu.module.css';
 
 
 const Menu = () => {
@@ -21,7 +21,10 @@ const Menu = () => {
           <li><Link to="#skills" onClick={hideMobile}>Skills</Link></li>
           <li><Link to="#projects" onClick={hideMobile}>Projects</Link></li>
           <li><Link to="#contact" onClick={hideMobile}>Contact</Link></li>
-        </ul></nav>}
+        </ul>
+        <button id={closeMenuBig} onClick={hideMobile}>Close Menu</button>
+
+      </nav>}
 
 
       <button id={openMenuButton} onClick={() => setShowMobile(true)}>
