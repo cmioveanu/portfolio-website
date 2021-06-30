@@ -14,7 +14,7 @@ import Contact from "../components/contact";
 
 
 const IndexPage = () => (
-  
+
   <main>
     <Stars />
     <Seo title="Home" />
@@ -23,9 +23,6 @@ const IndexPage = () => (
     <Profile >
       <Skills />
     </Profile>
-    <div className="canvasWrap">
-                <canvas id="canvas"></canvas>
-            </div>
     <Projects />
     <Contact />
   </main>

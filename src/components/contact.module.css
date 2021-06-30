@@ -29,7 +29,7 @@
     margin: 0 auto;
 }
 
-.contact label, input, textarea {
+.contact label, .contact input, .contact textarea {
     width: 100%;
     display: block;
     border: none;
@@ -44,4 +44,9 @@
 .contact input {
     margin-bottom: 1.25rem;
     height: 35px;
+    background-color: #e3e6e8;
+}
+
+.contact textarea {
+    background-color: #e3e6e8;
 }

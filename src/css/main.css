@@ -8,7 +8,7 @@ html {
 
 body {
   margin: 0;
-  color: white;
+  color: #f5f6f7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Lato', Helvetica, Arial, sans-serif;
@@ -349,14 +349,14 @@ hgroup {
 }
 
 ul {
-  margin-left: 1.45rem;
+  margin-left: 0;
   margin-right: 0;
   margin-top: 0;
+  margin-bottom: 1.45rem;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
   list-style-position: outside;
   list-style-image: none;
 }
@@ -628,7 +628,7 @@ html {
   background-color: #00163b;
   overflow: scroll;
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 16px !important;
 }
 
 section {
@@ -752,7 +752,7 @@ p {
 
 @media only screen and (min-width: 385px) {
   h1, h2 {
-    font-size: 3.3rem;
+    font-size: 3rem;
   }
 
   section {

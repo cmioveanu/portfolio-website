@@ -1,6 +1,5 @@
 import * as React from "react";
 import { contact, contactForm } from "./contact.module.css";
-import Stars from "./stars";
 
 
 const Contact = () => {

@@ -4,103 +4,10 @@ import { projectsContainer, innerProjectsContainer, projects, biggerSvg } from "
 import GazetteerImage from "../images/Gazetteer.png";
 import DirectoryImage from "../images/Directory.png";
 
-
 import IndividualProject from "./IndividualProject";
 
+
 const Projects = () => {
-
-
-    const makeWaves = async () => {
-        let cvs, ctx;
-        const nodes = 3;
-        const waves = [];
-        const waveHeight = 100;
-        const colours = ["#00050d", "#00102b"];
-
-        // Initiator function
-        const init = () => {
-            cvs = document.getElementById("canvas");
-            ctx = cvs.getContext("2d");
-
-            waves.push(new wave(colours[0], 1, nodes));
-            waves.push(new wave(colours[1], 1, nodes));
-
-            update();
-        }
-
-        const update = () => {
-            //var fill = window.getComputedStyle(document.querySelector(".header"), null).getPropertyValue("background-color");
-            ctx.fillStyle = '#00163b';
-            ctx.globalCompositeOperation = "source-over";
-            ctx.fillRect(0, 0, cvs.width, cvs.height);
-            ctx.globalCompositeOperation = "screen";
-            
-
-            // bounce nodes and draw waves
-            for (let i = 0; i < waves[0].nodes.length; i++) {
-                bounce(waves[0].nodes[i]);
-                bounce(waves[1].nodes[i]);
-            }
-            drawWave(waves[0]);
-            drawWave(waves[1]);
-
-            requestAnimationFrame(update);
-        }
-
-
-        // Wave object constructor
-        function wave(colour, lambda, nodes) {
-
-            this.colour = colour;
-            this.lambda = lambda;
-            this.nodes = [];
-
-            for (let i = 0; i <= nodes + 2; i++) {
-                const temp = [(i - 1) * cvs.width / nodes, 0, Math.random() * 200, .3];
-                this.nodes.push(temp);
-            }
-        }
-
-        const bounce = (nodeArr) => {
-            nodeArr[1] = waveHeight / 2 * Math.sin(nodeArr[2] / 20) + cvs.height / 2;
-            nodeArr[2] = nodeArr[2] + nodeArr[3];
-        }
-
-        const drawWave = (obj) => {
-
-            const diff = (a, b) => (b - a) / 2 + a;
-
-            ctx.fillStyle = obj.colour;
-            ctx.beginPath();
-            ctx.moveTo(0, cvs.height);
-            ctx.lineTo(obj.nodes[0][0], obj.nodes[0][1]);
-
-            for (let i = 0; i < obj.nodes.length; i++) {
-
-                if (obj.nodes[i + 1]) {
-                    ctx.quadraticCurveTo(
-                        obj.nodes[i][0], obj.nodes[i][1],
-                        diff(obj.nodes[i][0], obj.nodes[i + 1][0]), diff(obj.nodes[i][1], obj.nodes[i + 1][1])
-                    );
-                }
-                else {
-                    ctx.lineTo(obj.nodes[i][0], obj.nodes[i][1]);
-                    ctx.lineTo(cvs.width, cvs.height);
-                }
-            }
-            ctx.closePath();
-            ctx.fill();
-        }
-
-        init();
-    };
-
-
-    React.useEffect(() => {
-        //makeWaves();
-    }, []);
-
-
     return (
         <section id="projects" className={projects}>
             <div id={projectsContainer}>

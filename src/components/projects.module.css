@@ -1,8 +1,11 @@
 .projects {
     position: relative;
     z-index: 5;
-    box-shadow: 0 100px 100px -50px black;
+    box-shadow: 0 0 100px black;
     background-color: #002964;
+    margin-top: 12rem;
+    border: 2px solid #003580;
+    border-radius: 25px;
 }
 
 #projectsContainer {
@@ -10,7 +13,7 @@
 }
 
 .projects h2 {
-    padding-top: 4rem;
+    padding-top: 8rem;
     padding-bottom: 4rem;
 }
 
