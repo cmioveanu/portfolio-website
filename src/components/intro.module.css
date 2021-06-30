@@ -32,7 +32,7 @@
     padding: 0.5rem 0;
     margin: 0.3rem auto 1rem auto;
     font-family: 'Lato';
-    font-size: 1rem;
+    font-size: 16px;
     letter-spacing: 2.7px;
     text-transform: uppercase;
     width: 240px;
@@ -70,7 +70,7 @@
 @media only screen and (min-width: 385px) {
     
     #introDescription {
-        width: 310px;
-        letter-spacing: 6px;
+        width: 340px;
+        letter-spacing: 7.7px;
     }
 }
