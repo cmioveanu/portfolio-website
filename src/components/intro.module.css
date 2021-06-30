@@ -38,6 +38,7 @@
     width: 240px;
     font-weight: 400;
     text-align: center;
+    white-space: nowrap !important;
 }
 
 #buttonsContainer {
@@ -67,7 +68,7 @@
     }
 }
 
-@media only screen and (min-width: 385px) {
+@media only screen and (min-width: 404px) {
     
     #introDescription {
         width: 340px;
