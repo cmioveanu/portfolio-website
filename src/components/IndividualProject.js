@@ -5,13 +5,15 @@ import { project, iconsContainer, buttonsContainer, githubButton } from "./Indiv
 const IndividualProject = ({ projectName, photoSrc, photoAlt, description, live, github, githubShow, children }) => {
     return (
         <section className={project}>
-            <img src={photoSrc} alt={photoAlt} width="470" height="322"/>
+            <div>
+                <img src={photoSrc} alt={photoAlt} width="470" height="322" />
 
-            <div id={iconsContainer}>{children}</div>
+                <div id={iconsContainer}>{children}</div>
 
-            <h3>{projectName}</h3>
+                <h3>{projectName}</h3>
 
-            <p>{description}</p>
+                <p>{description}</p>
+            </div>
 
             <div id={buttonsContainer}>
                 <button>
