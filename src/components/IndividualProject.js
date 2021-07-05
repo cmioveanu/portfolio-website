@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { project, iconsContainer, buttonsContainer } from "./IndividualProject.module.css";
+import { project, iconsContainer, buttonsContainer, githubButton } from "./IndividualProject.module.css";
 
 
 const IndividualProject = ({ projectName, photoSrc, photoAlt, description, live, github, githubShow, children }) => {
@@ -19,7 +19,7 @@ const IndividualProject = ({ projectName, photoSrc, photoAlt, description, live,
                 </button>
 
                 {
-                    !githubShow ? null : <button>
+                    !githubShow ? null : <button className={githubButton}>
                         <a href={github} target="_blank" rel="noreferrer">GitHub</a>
                     </button>
                 }
